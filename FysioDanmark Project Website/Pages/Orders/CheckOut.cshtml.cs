@@ -6,7 +6,6 @@ using FysioDanmark_Project_Website.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using FysioDanmark_Project_Website.Models;
-using JsonBookRepository = FysioDanmark_Project_Website.Repositories.JsonBookRepository;
 
 namespace FysioDanmark_Project_Website;
 
@@ -15,7 +14,7 @@ public class CheckOut : PageModel
     public JsonOrderRepository JsonOrderRepository { get; set; }
     
     [BindProperty]
-    public Student Student { get; set; }
+    public Clients Clients { get; set; }
 
     public CheckOut(JsonOrderRepository repository)
     {
@@ -29,7 +28,7 @@ public class CheckOut : PageModel
 
     public IActionResult OnPost()
     {
-        JsonOrderRepository.AddOrder(Student);
-        return RedirectToPage("OrderPage", new { Name = Student.Name});
+        JsonOrderRepository.AddOrder(Clients);
+        return RedirectToPage("OrderPage", new { Name = Clients.Name});
     }
 }

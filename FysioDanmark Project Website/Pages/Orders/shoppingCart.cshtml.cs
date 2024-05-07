@@ -10,12 +10,12 @@ namespace FysioDanmark_Project_Website;
 public class shoppingCart : PageModel
 {
     [BindProperty]
-    public Book Book { get; set; }
+    public Models.Services Services { get; set; }
     public double TotalPrice { get; set; }
-    private Repositories.JsonBookRepository repo;
+    private Repositories.JsonServiceRepository repo;
     public ShoppingCartService ShoppingCartService { get; set; }
     
-    public shoppingCart(Repositories.JsonBookRepository repository, ShoppingCartService shoppingCartService)
+    public shoppingCart(Repositories.JsonServiceRepository repository, ShoppingCartService shoppingCartService)
     {
         repo = repository;
         ShoppingCartService = shoppingCartService;
@@ -23,8 +23,8 @@ public class shoppingCart : PageModel
 
     public IActionResult OnPost(string ISBN)
     {
-        Book = repo.GetBook(ISBN);
-        ShoppingCartService.RemoveBookFromCart(Book);
+        Services = repo.GetBook(ISBN);
+        ShoppingCartService.RemoveBookFromCart(Services);
         return Page();
     }
     
@@ -32,8 +32,8 @@ public class shoppingCart : PageModel
     {
         if (ISBN != null)
         {
-            Book = repo.GetBook(ISBN);
-            ShoppingCartService.AddToCart(Book);
+            Services = repo.GetBook(ISBN);
+            ShoppingCartService.AddToCart(Services);
         }
         TotalPrice = ShoppingCartService.CalcTotalPrice();
         return Page();

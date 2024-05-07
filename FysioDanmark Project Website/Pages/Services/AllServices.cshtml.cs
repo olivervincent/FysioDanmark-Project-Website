@@ -13,15 +13,15 @@ namespace FysioDanmark_Project_Website
     public class AllBooksModel : PageModel
     {
         
-        private IBooksRepository catalog;
-        public AllBooksModel(IBooksRepository repository)
+        private IServicesRepository catalog;
+        public AllBooksModel(IServicesRepository repository)
         {
             catalog = repository;
         }
-        public List<Book> Books { get; private set; } 
+        public List<Models.Services> Books { get; private set; } 
        
         [BindProperty]
-        public Book Book { get; set; }
+        public Models.Services Services { get; set; }
         public IActionResult OnGet()
         {
             Books= catalog.GetAllBooks();
@@ -31,7 +31,7 @@ namespace FysioDanmark_Project_Website
         {
             if (ModelState.IsValid)
             {
-                catalog.AddBook(Book);
+                catalog.AddBook(Services);
                 Books = catalog.GetAllBooks();
             }
             return Page();

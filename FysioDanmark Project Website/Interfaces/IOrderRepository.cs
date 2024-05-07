@@ -9,6 +9,6 @@ namespace FysioDanmark_Project_Website.Interfaces
 {
     public interface IOrderRepository
     {
-         void AddOrder(Student student);
+         void AddOrder(Clients clients);
     }
 }

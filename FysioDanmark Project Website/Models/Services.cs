@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace FysioDanmark_Project_Website.Models
 {
-    public class Book
+    public class Services
     {
         public double Price { get; set; }
         public string Title { get; set; }

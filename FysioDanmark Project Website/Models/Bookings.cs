@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace FysioDanmark_Project_Website.Models
 {
-    public class Order
+    public class Bookings
     {     
         public int OrderId { get; set; }          
-        public Student Student { get; set; }
-        public List<Book> Books { get; set; }
+        public Clients Clients { get; set; }
+        public List<Services> Books { get; set; }
         public DateTime DateTime { get; set; }
     }
 }

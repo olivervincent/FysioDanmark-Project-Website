@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace FysioDanmark_Project_Website.Models
 {
-   public enum Section
-    {   
-        IT,
-        Marketing,
-        Business
+    public class Clients
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

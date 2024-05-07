@@ -10,14 +10,14 @@ namespace FysioDanmark_Project_Website.Services
     {
         string JsonFileName= "/Users/olivervincent/Desktop/Zealand/Software Construction/RP_UnSolved-master/RazorPages_Exercises/Book_StoreV10/Book_StoreV10/Data/JsonBooksStock.json";
 
-        public List<Book> GetAllBooks()
+        public List<Models.Services> GetAllBooks()
         {
             return JsonFileReader.ReadJsonBook(JsonFileName);
         }
-        public void AddBook(Book book)
+        public void AddBook(Models.Services services)
         {
-            List<Book> books = GetAllBooks().ToList();
-            books.Add(book);
+            List<Models.Services> books = GetAllBooks().ToList();
+            books.Add(services);
             JsonFileWritter.WriteToJsonBook(books, JsonFileName);
         }
     }

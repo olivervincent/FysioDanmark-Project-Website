@@ -7,21 +7,15 @@
 <title>Enter Customer Info</title>
 <form method="post">
     <div class="form-group">
-        <label asp-for="@Model.Student.Id" class="control-label"> Id </label>
-        <input asp-for="@Model.Student.Id" class="form-control"/>
-        <span asp-validation-for="@Model.Student.Id" class="text-danger"></span>
+        <label asp-for="@Model.Clients.Id" class="control-label"> Id </label>
+        <input asp-for="@Model.Clients.Id" class="form-control"/>
+        <span asp-validation-for="@Model.Clients.Id" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="@Model.Student.Name" class="control-label">Name </label>
-        <input asp-for="@Model.Student.Name" class="form-control" />
-        <span asp-validation-for="@Model.Student.Name" class="text-danger"></span>
+        <label asp-for="@Model.Clients.Name" class="control-label">Name </label>
+        <input asp-for="@Model.Clients.Name" class="form-control" />
+        <span asp-validation-for="@Model.Clients.Name" class="text-danger"></span>
     </div>
-    <p>Section</p>
-    <select class="form-group" asp-for="@Model.Student.Section">
-        <option value="IT">IT</option>
-        <option value="Marketing">Marketing</option>
-        <option value="Business">Business</option>
-    </select>
     <div class="form-group">
         <input type="submit" value="Place Order" class="btn btn-primary" />
     </div>

@@ -11,19 +11,19 @@ namespace FysioDanmark_Project_Website.Repositories
     public class JsonOrderRepository :IOrderRepository
     {
         const string JsonFilePath = "/Users/olivervincent/Desktop/Zealand/Software Construction/RP_UnSolved-master/RazorPages_Exercises/Book_StoreV10/Book_StoreV10/Data/JsonBookOrders.json";
-        private List<Order> JsonOrders { get; set; }
-        private Order Order { get; set; }
+        private List<Bookings> JsonOrders { get; set; }
+        private Bookings Bookings { get; set; }
         
-        public void AddOrder(Student student)
+        public void AddOrder(Clients clients)
         { 
-            Order = new Order();
-            Order.Student = student;
-            Order.DateTime = DateTime.Now;
-            Order.Books = ShoppingCartService.GetOrderedItems();
-            Order.OrderId = JsonFileReader.ReadJsonOrder(JsonFilePath).Count + 1;
+            Bookings = new Bookings();
+            Bookings.Clients = clients;
+            Bookings.DateTime = DateTime.Now;
+            Bookings.Books = ShoppingCartService.GetOrderedItems();
+            Bookings.OrderId = JsonFileReader.ReadJsonOrder(JsonFilePath).Count + 1;
             
             JsonOrders = JsonFileReader.ReadJsonOrder(JsonFilePath);
-            JsonOrders.Add(Order);
+            JsonOrders.Add(Bookings);
             JsonFileWritter.WriteToJsonOrder(JsonOrders, JsonFilePath);
         }
 

@@ -5,9 +5,6 @@ using System.Threading.Tasks;
 using FysioDanmark_Project_Website.Interfaces;
 using FysioDanmark_Project_Website.Repositories;
 using FysioDanmark_Project_Website.Services;
-using FysioDanmark_Project_Website.Interfaces;
-using FysioDanmark_Project_Website.Repositories;
-using FysioDanmark_Project_Website.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,8 +27,8 @@ namespace FysioDanmark_Project_Website
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddTransient<IBooksRepository,Repositories.JsonBookRepository>();
-            services.AddScoped<FysioDanmark_Project_Website.Repositories.JsonBookRepository>();
+            services.AddTransient<IServicesRepository,Repositories.JsonServiceRepository>();
+            services.AddScoped<FysioDanmark_Project_Website.Repositories.JsonServiceRepository>();
             
             services.AddSingleton<ShoppingCartService>();
             services.AddSingleton<JsonOrderRepository>();

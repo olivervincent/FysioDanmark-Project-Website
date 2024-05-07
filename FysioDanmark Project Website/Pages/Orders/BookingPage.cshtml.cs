@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FysioDanmark_Project_Website;
 
-public class OrderPage : PageModel
+public class BookingPage : PageModel
 {
     public double TotalPrice { get; set; }
     public string StudentName { get; set; }
     public ShoppingCartService ShoppingCartService { get; set; }
     
-    public OrderPage(ShoppingCartService shoppingCartService)
+    public BookingPage(ShoppingCartService shoppingCartService)
     {
         ShoppingCartService = shoppingCartService;
     }

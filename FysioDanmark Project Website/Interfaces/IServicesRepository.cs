@@ -7,10 +7,10 @@ using FysioDanmark_Project_Website.Models;
 
 namespace FysioDanmark_Project_Website.Interfaces
 {
-    public interface IBooksRepository
+    public interface IServicesRepository
     {
-        List<Book> GetAllBooks();
-        void AddBook(Book book);
-        Book GetBook(string isbn);
+        List<Models.Services> GetAllBooks();
+        void AddBook(Models.Services services);
+        Models.Services GetBook(string isbn);
     }
 }

@@ -9,27 +9,27 @@ namespace FysioDanmark_Project_Website.Services
 {
     public class ShoppingCartService
     {
-        public static List<Book> ShoppingCart { get; set; } = new List<Book>();
+        public static List<Models.Services> ShoppingCart { get; set; } = new List<Models.Services>();
         //public Repositories.JsonBookRepository repo;
         
         public ShoppingCartService()
         {
-            ShoppingCart = new List<Book>();
+            ShoppingCart = new List<Models.Services>();
             //repo = repository;
         }
         
-        public void AddToCart(Book book)
+        public void AddToCart(Models.Services services)
         {
             //Book bookToAdd = repo.GetBook(ISBN);
-            ShoppingCart.Add(book);
+            ShoppingCart.Add(services);
         }
 
-        public void RemoveBookFromCart(Book book)
+        public void RemoveBookFromCart(Models.Services services)
         {
             //Book bookToRemove = repo.GetBook(book.ISBN);
             foreach (var booklist in ShoppingCart)
             {
-                if (booklist.ISBN == book.ISBN)
+                if (booklist.ISBN == services.ISBN)
                 {
                     ShoppingCart.Remove(booklist);
                     break;
@@ -40,7 +40,7 @@ namespace FysioDanmark_Project_Website.Services
         public double CalcTotalPrice()
         {
             double totalPrice = 0;
-            foreach (Book book in ShoppingCart)
+            foreach (Models.Services book in ShoppingCart)
             {
                 totalPrice += book.Price;
             }
@@ -48,9 +48,9 @@ namespace FysioDanmark_Project_Website.Services
             return totalPrice;
         }
         
-        public static List<Book> GetOrderedItems()
+        public static List<Models.Services> GetOrderedItems()
         {
-            List<Book> shoppingCart = ShoppingCart;
+            List<Models.Services> shoppingCart = ShoppingCart;
             return shoppingCart;
         }
     }

@@ -10,18 +10,18 @@ namespace FysioDanmark_Project_Website
 {
     public class JsonFileReader
     {
-        public static List<Book> ReadJsonBook(string JsonFileName)
+        public static List<Models.Services> ReadJsonBook(string JsonFileName)
         {
             string jsonString = File.ReadAllText(JsonFileName);
 
-            return JsonSerializer.Deserialize<List<Book>>(jsonString);
+            return JsonSerializer.Deserialize<List<Models.Services>>(jsonString);
         }
         
-        public static List<Order> ReadJsonOrder(string JsonFileName)
+        public static List<Bookings> ReadJsonOrder(string JsonFileName)
         {
             string jsonString = File.ReadAllText(JsonFileName);
 
-            return JsonSerializer.Deserialize<List<Order>>(jsonString);
+            return JsonSerializer.Deserialize<List<Bookings>>(jsonString);
         }
     }
 }

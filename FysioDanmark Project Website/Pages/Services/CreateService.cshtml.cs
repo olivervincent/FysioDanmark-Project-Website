@@ -12,11 +12,11 @@ namespace FysioDanmark_Project_Website;
 
 public class CreateBookModel : PageModel
 {
-    private IBooksRepository repository;
+    private IServicesRepository repository;
     [BindProperty]
-    public Book Book { get; set; }
-    public List<Book> Books { get; set; }
-    public CreateBookModel(IBooksRepository repo)
+    public Models.Services Services { get; set; }
+    public List<Models.Services> Books { get; set; }
+    public CreateBookModel(IServicesRepository repo)
     {
         repository = repo;
     }
@@ -31,7 +31,7 @@ public class CreateBookModel : PageModel
         {
             return Page();
         }
-        repository.AddBook(Book);
+        repository.AddBook(Services);
         Books = repository.GetAllBooks();
         return RedirectToPage("CreateBook");           
     }
