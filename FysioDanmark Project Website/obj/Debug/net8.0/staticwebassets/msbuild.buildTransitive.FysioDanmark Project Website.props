@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/FysioDanmark Project Website.props" />
+</Project>

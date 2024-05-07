@@ -1,0 +1,63 @@
+@page
+@using FysioDanmark_Project_Website.Services
+@using FysioDanmark_Project_Website.Models
+@model FysioDanmark_Project_Website.OrderPage
+
+<!DOCTYPE html>
+
+<title>Order Confirmation</title>
+<p></p>
+<p>Hello Mr. @Model.StudentName</p>
+<p>Thanks for making this order!</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            ISBN
+        </th>
+        <th>
+            Author
+        </th>
+        <th>
+            Title
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Image     
+        </th>            
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in ShoppingCartService.ShoppingCart)
+    {
+        <tr>
+            <td>
+                @item.ISBN
+            </td>
+            <td>
+                @item.Author
+            </td>
+            <td>
+                @item.Title
+            </td>
+            <td>
+                @item.Price
+            </td>
+            <td>
+                @item.ImageName
+            </td>
+            <td>
+                <img src="~/Books/@item.ImageName" width="60" height="70">
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<p>Total Price: @Model.TotalPrice</p> 
+<p>We will ship your items as soon as possible.</p>
+<a asp-page="/Books/AllBooks"
+   class="btn btn-success btn-group-lg pull-right"  >
+    Return to All Books
+</a>

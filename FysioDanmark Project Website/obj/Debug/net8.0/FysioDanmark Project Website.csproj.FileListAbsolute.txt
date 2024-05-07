@@ -1,0 +1,35 @@
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/appsettings.Development.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/appsettings.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/FysioDanmark Project Website.staticwebassets.runtime.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/FysioDanmark Project Website
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/FysioDanmark Project Website.deps.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/FysioDanmark Project Website.runtimeconfig.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/FysioDanmark Project Website.dll
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/FysioDanmark Project Website.pdb
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.GeneratedMSBuildEditorConfig.editorconfig
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.AssemblyInfoInputs.cache
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.AssemblyInfo.cs
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.csproj.CoreCompileInputs.cache
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.MvcApplicationPartsAssemblyInfo.cache
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.RazorAssemblyInfo.cache
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.RazorAssemblyInfo.cs
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.sourcelink.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/staticwebassets.build.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/staticwebassets.development.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/staticwebassets/msbuild.FysioDanmark Project Website.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/staticwebassets/msbuild.build.FysioDanmark Project Website.props
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.FysioDanmark Project Website.props
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.FysioDanmark Project Website.props
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/scopedcss/bundle/FysioDanmark Project Website.styles.css
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.dll
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/refint/FysioDanmark Project Website.dll
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.pdb
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.genruntimeconfig.cache
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/ref/FysioDanmark Project Website.dll
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Data/JsonBookOrders.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Data/JsonBooksStock.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Data/JsonBooksStore.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.csproj.AssemblyReference.cache
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.csproj.CopyComplete
