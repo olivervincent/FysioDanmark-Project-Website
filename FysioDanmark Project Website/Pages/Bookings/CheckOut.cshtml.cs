@@ -11,14 +11,18 @@ namespace FysioDanmark_Project_Website;
 
 public class CheckOut : PageModel
 {
-    public JsonOrderRepository JsonOrderRepository { get; set; }
+    public JsonBookingRepository JsonBookingRepository { get; set; }
     
     [BindProperty]
     public Clients Clients { get; set; }
+    [BindProperty]
+    public Staff Staffs { get; set; }
+    [BindProperty]
+    public DateTime DateTime { get; set; }
 
-    public CheckOut(JsonOrderRepository repository)
+    public CheckOut(JsonBookingRepository repository)
     {
-        JsonOrderRepository = repository;
+        JsonBookingRepository = repository;
     }
     
     public IActionResult OnGet()
@@ -28,7 +32,7 @@ public class CheckOut : PageModel
 
     public IActionResult OnPost()
     {
-        JsonOrderRepository.AddOrder(Clients);
-        return RedirectToPage("OrderPage", new { Name = Clients.Name});
+        JsonBookingRepository.AddBooking(Clients, Staffs.Name, DateTime);
+        return RedirectToPage("BookingPage", new { Name = Clients.Name});
     }
 }

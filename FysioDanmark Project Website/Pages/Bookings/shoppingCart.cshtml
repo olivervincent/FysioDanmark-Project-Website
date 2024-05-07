@@ -12,10 +12,7 @@
     <thead>
     <tr>
         <th>
-            ISBN
-        </th>
-        <th>
-            Author
+            Id
         </th>
         <th>
             Title
@@ -33,10 +30,7 @@
     {
         <tr>
             <td>
-                @item.ISBN
-            </td>
-            <td>
-                @item.Author
+                @item.Id
             </td>
             <td>
                 @item.Title
@@ -53,7 +47,7 @@
             <td>
             <form method="post">
                 <div class="form-group">
-                    <input type="hidden" name="ISBN" value="@item.ISBN"/>
+                    <input type="hidden" name="Id" value="@item.Id"/>
                     <input type="submit" value="Delete" class="btn btn-danger"/>
                 </div>
             </form>
@@ -65,7 +59,7 @@
 <p>Total Price: @Model.TotalPrice</p> 
 <a asp-page="CheckOut" class="btn btn-primary" style="--blue: indianred">Check Out</a>
 
-<a asp-page="/Books/AllBooks"
+<a asp-page="/BookingServices/AllServices"
    class="btn btn-success btn-group-lg pull-right"  >
-    Continue Shopping
+    Add more services
 </a>

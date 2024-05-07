@@ -9,8 +9,8 @@ namespace FysioDanmark_Project_Website.Interfaces
 {
     public interface IServicesRepository
     {
-        List<Models.Services> GetAllBooks();
-        void AddBook(Models.Services services);
-        Models.Services GetBook(string isbn);
+        List<Models.Services> GetAllServices();
+        void AddService(Models.Services services);
+        Models.Services GetService(string isbn);
     }
 }

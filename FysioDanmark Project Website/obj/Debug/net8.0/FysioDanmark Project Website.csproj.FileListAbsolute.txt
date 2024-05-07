@@ -27,9 +27,10 @@
 /Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.pdb
 /Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.genruntimeconfig.cache
 /Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/ref/FysioDanmark Project Website.dll
-/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Data/JsonBookOrders.json
-/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Data/JsonBooksStock.json
-/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Data/JsonBooksStore.json
 /Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.csproj.AssemblyReference.cache
 /Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/obj/Debug/net8.0/FysioDanmark Project Website.csproj.CopyComplete
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Data/JsonBookings.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Data/JsonLogins.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Data/JsonServices.json
+/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/bin/Debug/net8.0/Data/JsonStaffs.json

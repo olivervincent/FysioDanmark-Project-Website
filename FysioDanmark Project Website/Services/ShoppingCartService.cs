@@ -10,28 +10,24 @@ namespace FysioDanmark_Project_Website.Services
     public class ShoppingCartService
     {
         public static List<Models.Services> ShoppingCart { get; set; } = new List<Models.Services>();
-        //public Repositories.JsonBookRepository repo;
         
         public ShoppingCartService()
         {
             ShoppingCart = new List<Models.Services>();
-            //repo = repository;
         }
         
         public void AddToCart(Models.Services services)
         {
-            //Book bookToAdd = repo.GetBook(ISBN);
             ShoppingCart.Add(services);
         }
 
-        public void RemoveBookFromCart(Models.Services services)
+        public void RemoveServiceFromCart(Models.Services services)
         {
-            //Book bookToRemove = repo.GetBook(book.ISBN);
-            foreach (var booklist in ShoppingCart)
+            foreach (var serviceList in ShoppingCart)
             {
-                if (booklist.ISBN == services.ISBN)
+                if (serviceList.Id == services.Id)
                 {
-                    ShoppingCart.Remove(booklist);
+                    ShoppingCart.Remove(serviceList);
                     break;
                 }
             }
@@ -40,15 +36,15 @@ namespace FysioDanmark_Project_Website.Services
         public double CalcTotalPrice()
         {
             double totalPrice = 0;
-            foreach (Models.Services book in ShoppingCart)
+            foreach (Models.Services service in ShoppingCart)
             {
-                totalPrice += book.Price;
+                totalPrice += service.Price;
             }
 
             return totalPrice;
         }
         
-        public static List<Models.Services> GetOrderedItems()
+        public static List<Models.Services> GetBookingItems()
         {
             List<Models.Services> shoppingCart = ShoppingCart;
             return shoppingCart;

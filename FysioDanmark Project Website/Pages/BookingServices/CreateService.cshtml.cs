@@ -10,19 +10,19 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FysioDanmark_Project_Website;
 
-public class CreateBookModel : PageModel
+public class CreateServiceModel : PageModel
 {
     private IServicesRepository repository;
     [BindProperty]
     public Models.Services Services { get; set; }
-    public List<Models.Services> Books { get; set; }
-    public CreateBookModel(IServicesRepository repo)
+    public List<Models.Services> AllServices { get; set; }
+    public CreateServiceModel(IServicesRepository repo)
     {
         repository = repo;
     }
     public void OnGet()
     {
-        Books= repository.GetAllBooks();
+        AllServices = repository.GetAllServices();
     }
 
     public IActionResult OnPost()
@@ -31,8 +31,8 @@ public class CreateBookModel : PageModel
         {
             return Page();
         }
-        repository.AddBook(Services);
-        Books = repository.GetAllBooks();
-        return RedirectToPage("CreateBook");           
+        repository.AddService(Services);
+        AllServices = repository.GetAllServices();
+        return RedirectToPage("CreateService");           
     }
 }

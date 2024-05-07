@@ -9,7 +9,7 @@ namespace FysioDanmark_Project_Website;
 public class BookingPage : PageModel
 {
     public double TotalPrice { get; set; }
-    public string StudentName { get; set; }
+    public string ClientName { get; set; }
     public ShoppingCartService ShoppingCartService { get; set; }
     
     public BookingPage(ShoppingCartService shoppingCartService)
@@ -19,7 +19,7 @@ public class BookingPage : PageModel
     
     public IActionResult OnGet(string Name)
     {
-        StudentName = Name;
+        ClientName = Name;
         TotalPrice = ShoppingCartService.CalcTotalPrice();
         return Page();
     }

@@ -16,7 +16,16 @@
         <input asp-for="@Model.Clients.Name" class="form-control" />
         <span asp-validation-for="@Model.Clients.Name" class="text-danger"></span>
     </div>
+    <p>Staff</p>
+    <select class="form-group" asp-for="@Model.Staffs.Name">
+        <option value="Sture">Sture (Massage)</option>
+        <option value="Halil">Halil (Physiotherapist)</option>
+        <option value="Rami">Rami (Rehabilitation)</option>
+    </select>
+    <p></p>
+    DateTime <input class="form-control" asp-for="DateTime" />
+    <p></p>
     <div class="form-group">
-        <input type="submit" value="Place Order" class="btn btn-primary" />
+        <input type="submit" value="Confirm Booking" class="btn btn-primary" />
     </div>
 </form>

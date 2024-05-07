@@ -18,12 +18,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Books/AllBooks.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va3MvQWxsQm9va3MuY3NodG1s
+[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Bookings/AvailableServices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ3MvQXZhaWxhYmxlU2VydmljZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Books/CreateBook.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va3MvQ3JlYXRlQm9vay5jc2h0bWw=
+[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Bookings/BookingPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ3MvQm9va2luZ1BhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Bookings/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ3MvQ2hlY2tPdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Bookings/shoppingCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ3Mvc2hvcHBpbmdDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/BookingServices/AllBookings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ1NlcnZpY2VzL0FsbEJvb2tpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/BookingServices/AllServices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ1NlcnZpY2VzL0FsbFNlcnZpY2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/BookingServices/CreateService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ1NlcnZpY2VzL0NyZWF0ZVNlcnZpY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Error.cshtml]
@@ -32,22 +52,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Orders/AvailableBooks.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJzL0F2YWlsYWJsZUJvb2tzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Orders/CheckOut.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJzL0NoZWNrT3V0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Orders/OrderPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJzL09yZGVyUGFnZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Orders/shoppingCart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXJzL3Nob3BwaW5nQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Privacy.cshtml]

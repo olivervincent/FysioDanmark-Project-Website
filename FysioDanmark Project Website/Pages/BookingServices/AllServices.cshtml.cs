@@ -10,29 +10,29 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FysioDanmark_Project_Website
 {
-    public class AllBooksModel : PageModel
+    public class AllServicesModel : PageModel
     {
         
         private IServicesRepository catalog;
-        public AllBooksModel(IServicesRepository repository)
+        public AllServicesModel(IServicesRepository repository)
         {
             catalog = repository;
         }
-        public List<Models.Services> Books { get; private set; } 
+        public List<Models.Services> AllServices { get; private set; } 
        
         [BindProperty]
         public Models.Services Services { get; set; }
         public IActionResult OnGet()
         {
-            Books= catalog.GetAllBooks();
+            AllServices = catalog.GetAllServices();
             return Page();
         }
         public IActionResult OnPost()
         {
             if (ModelState.IsValid)
             {
-                catalog.AddBook(Services);
-                Books = catalog.GetAllBooks();
+                catalog.AddService(Services);
+                AllServices = catalog.GetAllServices();
             }
             return Page();
         }

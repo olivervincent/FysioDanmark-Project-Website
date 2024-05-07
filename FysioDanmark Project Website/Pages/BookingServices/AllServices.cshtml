@@ -1,39 +1,35 @@
 ﻿@page
-@model FysioDanmark_Project_Website.AllBooksModel
+@model FysioDanmark_Project_Website.AllServicesModel
 @{
-    ViewData["Title"] = "AllBooks";
+    ViewData["Title"] = "AllServices";
 }
 
-<h1> AllBooks </h1>
+<h1> All Services </h1>
 <table class="table">
     <thead>
         <tr>
             <th>Title </th>
-            <th>Author</th>
             <th>Price</th>
             <th>Image</th>
         </tr>
     </thead>
     <tbody>
-    @if(Model.Books.Count!=0)
+    @if(Model.AllServices.Count!=0)
         {        
-        @foreach (var item in Model.Books)
+        @foreach (var item in Model.AllServices)
         {
         <tr>
             <td>
                 @item.Title
             </td>
             <td>
-                @item.Author
-            </td>
-            <td>
                 @item.Price
             </td>
             <td>
-                <img src="~/Books/@item.ImageName" width="80" height="70">
+                <img src="~/Services/@item.ImageName" width="80" height="70">
             </td>
             <td>
-                <a asp-page="/Orders/ShoppingCart" asp-route-isbn="@item.ISBN"
+                <a asp-page="/Bookings/ShoppingCart" asp-route-id="@item.Id"
                        class="btn btn-success btn-group-lg pull-right"  >
                         Add To Cart
                 </a>

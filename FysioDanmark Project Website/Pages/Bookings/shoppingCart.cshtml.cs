@@ -21,18 +21,18 @@ public class shoppingCart : PageModel
         ShoppingCartService = shoppingCartService;
     }
 
-    public IActionResult OnPost(string ISBN)
+    public IActionResult OnPost(string Id)
     {
-        Services = repo.GetBook(ISBN);
-        ShoppingCartService.RemoveBookFromCart(Services);
+        Services = repo.GetService(Id);
+        ShoppingCartService.RemoveServiceFromCart(Services);
         return Page();
     }
     
-    public IActionResult OnGet(string ISBN)
+    public IActionResult OnGet(string Id)
     {
-        if (ISBN != null)
+        if (Id != null)
         {
-            Services = repo.GetBook(ISBN);
+            Services = repo.GetService(Id);
             ShoppingCartService.AddToCart(Services);
         }
         TotalPrice = ShoppingCartService.CalcTotalPrice();

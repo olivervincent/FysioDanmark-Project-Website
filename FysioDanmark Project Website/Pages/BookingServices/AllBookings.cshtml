@@ -1,0 +1,53 @@
+@page
+@model FysioDanmark_Project_Website.AllBookingsModel
+@{
+    ViewData["Title"] = "AllBookings";
+}
+
+<h1> All Bookings </h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id </th>
+        <th>Client</th>
+        <th>Staff assigned</th>
+        <th>Services</th>
+        <th>Time booked</th>
+    </tr>
+    </thead>
+    <tbody>
+    @if(Model.AllBookings.Count!=0)
+    {        
+        @foreach (var item in Model.AllBookings)
+        {
+            <tr>
+                <td>
+                    @item.BookingId
+                </td>
+                <td>
+                    @item.Clients.Name
+                </td>
+                <td>
+                    @item.Staff.Name (@item.Staff.Specialty)
+                </td>
+                <td>
+                    @foreach (var services in @item.Services)
+                    {
+                        <p>- @services.Title</p>
+                    }
+                </td>
+                <td>
+                    @item.DateTime
+                </td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
+<td>
+                <a asp-page="/BookingServices/AllServices"
+                       class="btn btn-success btn-group-lg pull-right"  >
+                        Back
+                </a>
+            </td> 
+
