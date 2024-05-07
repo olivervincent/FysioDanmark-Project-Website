@@ -130,5 +130,26 @@
       "Id": 1,
       "Specialty": "Massage"
     }
+  },
+  {
+    "BookingId": 7,
+    "Clients": {
+      "Id": 43,
+      "Name": "cdas"
+    },
+    "Services": [
+      {
+        "Price": 200.0,
+        "Title": "Physiotherapy",
+        "Id": "111",
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "2024-05-07T03:03:00",
+    "Staff": {
+      "Name": "Rami",
+      "Id": 3,
+      "Specialty": "Rehabilitation"
+    }
   }
 ]

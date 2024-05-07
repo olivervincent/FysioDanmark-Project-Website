@@ -18,9 +18,10 @@
     </div>
     <p>Staff</p>
     <select class="form-group" asp-for="@Model.Staffs.Name">
-        <option value="Sture">Sture (Massage)</option>
-        <option value="Halil">Halil (Physiotherapist)</option>
-        <option value="Rami">Rami (Rehabilitation)</option>
+        @foreach(var staff in Model.JsonBookingRepository.GetAllStaffs())
+        {
+            <option value=@staff.Name>@staff.Name (@staff.Specialty)</option>
+        }
     </select>
     <p></p>
     DateTime <input class="form-control" asp-for="DateTime" />
