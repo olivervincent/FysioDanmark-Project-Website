@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FysioDanmark Project Website")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afca0e08d14f99fed97632002926e853db52d3bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20169e19583893bd81cbb78cade3004fda6a983a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FysioDanmark Project Website")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FysioDanmark Project Website")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
