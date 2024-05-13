@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3K9Ufs28Qq2ECw0IjhbzragLvYXDTL2pr3NRuZyMA+s=",
+  "Hash": "HnepLnBsWC9APKl30ZMKkIUZq5NHeiMDgWunVHFe/vo=",
   "Source": "FysioDanmark Project Website",
   "BasePath": "_content/FysioDanmark Project Website",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/wwwroot/images/logo.webp",
+      "SourceId": "FysioDanmark Project Website",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/wwwroot/",
+      "BasePath": "_content/FysioDanmark Project Website",
+      "RelativePath": "images/logo.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/logo.webp"
     },
     {
       "Identity": "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/wwwroot/js/site.js",

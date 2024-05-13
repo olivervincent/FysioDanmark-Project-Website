@@ -12,5 +12,6 @@ namespace FysioDanmark_Project_Website.Interfaces
         List<Models.Services> GetAllServices();
         void AddService(Models.Services services);
         Models.Services GetService(string isbn);
+        void DeleteService(Models.Services service);
     }
 }

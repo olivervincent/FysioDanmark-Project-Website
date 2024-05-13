@@ -1,22 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using FysioDanmark_Project_Website.Interfaces;
-using FysioDanmark_Project_Website.Models;
-using FysioDanmark_Project_Website.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FysioDanmark_Project_Website;
 
-public class CreateServiceModel : PageModel
+public class ManageServices : PageModel
 {
     private IServicesRepository repository;
     [BindProperty]
     public Models.Services Services { get; set; }
     public List<Models.Services> AllServices { get; set; }
-    public CreateServiceModel(IServicesRepository repo)
+    public ManageServices(IServicesRepository repo)
     {
         repository = repo;
     }
@@ -31,7 +25,7 @@ public class CreateServiceModel : PageModel
         {
             return Page();
         }
-        repository.AddService(Services);
+        repository.DeleteService(Services);
         AllServices = repository.GetAllServices();
         return RedirectToPage("ManageServices");           
     }

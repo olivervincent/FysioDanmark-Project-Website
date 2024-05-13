@@ -1,17 +1,1 @@
-[
-  {
-    "Name": "Sture",
-    "Id": 1,
-    "Specialty": "Massage"
-  },
-  {
-    "Name": "Halil",
-    "Id": 2,
-    "Specialty": "Physiotherapist"
-  },
-  {
-    "Name": "Rami",
-    "Id": 3,
-    "Specialty": "Rehabilitation"
-  }
-]
+[]

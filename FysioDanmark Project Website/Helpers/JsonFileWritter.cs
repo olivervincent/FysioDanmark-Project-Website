@@ -21,5 +21,11 @@ namespace FysioDanmark_Project_Website
             string output = Newtonsoft.Json.JsonConvert.SerializeObject(orders, Newtonsoft.Json.Formatting.Indented);
             File.WriteAllText(JsonFileName, output);
         }
+        
+        public static void WriteToJsonStaff(List<Staff> staff, string JsonFileName)
+        {
+            string output = Newtonsoft.Json.JsonConvert.SerializeObject(staff, Newtonsoft.Json.Formatting.Indented);
+            File.WriteAllText(JsonFileName, output);
+        }
     }
 }

@@ -21,6 +21,13 @@ namespace FysioDanmark_Project_Website.Repositories
             serviceList.Add(service);
             JsonFileWritter.WriteToJsonService(serviceList, JsonFileName);
         }
+
+        public void DeleteService(Models.Services service)
+        {
+            List<Models.Services> serviceList = GetAllServices();
+            serviceList.Remove(service);
+            JsonFileWritter.WriteToJsonService(serviceList, JsonFileName);
+        }
         public Models.Services GetService(string id)
         {
             foreach (var b in GetAllServices())

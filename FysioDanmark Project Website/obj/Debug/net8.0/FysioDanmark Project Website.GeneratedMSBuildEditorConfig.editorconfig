@@ -42,8 +42,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ1NlcnZpY2VzL0FsbFNlcnZpY2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/BookingServices/AllStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ1NlcnZpY2VzL0FsbFN0YWZmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/BookingServices/CreateService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ1NlcnZpY2VzL0NyZWF0ZVNlcnZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/BookingServices/CreateStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ1NlcnZpY2VzL0NyZWF0ZVN0YWZmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/BookingServices/ManageServices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQm9va2luZ1NlcnZpY2VzL01hbmFnZVNlcnZpY2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Pages/Error.cshtml]

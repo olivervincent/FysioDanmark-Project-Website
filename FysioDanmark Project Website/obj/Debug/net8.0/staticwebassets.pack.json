@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/wwwroot/images/logo.webp",
+      "PackagePath": "staticwebassets/images/logo.webp"
+    },
+    {
       "Id": "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

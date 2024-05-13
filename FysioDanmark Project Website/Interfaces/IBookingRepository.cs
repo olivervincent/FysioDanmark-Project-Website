@@ -12,5 +12,9 @@ namespace FysioDanmark_Project_Website.Interfaces
     {
          void AddBooking(Clients clients, string staff, DateTime dateTime);
          List<Models.Bookings> GetAllBookings();
+         List<Models.Staff> GetAllStaff();
+         void DeleteStaff(int Id);
+         void CreateStaff(Staff staff);
+         void DeleteBooking(int Id);
     }
 }

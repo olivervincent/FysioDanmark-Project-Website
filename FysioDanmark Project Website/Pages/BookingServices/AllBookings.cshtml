@@ -39,6 +39,12 @@
                 <td>
                     @item.DateTime
                 </td>
+                <td>
+                    <form method="post">
+                        <input type="hidden" asp-for="@item.BookingId" name="id">
+                        <button type="submit" style="color: indianred; background: none; border: none; padding: 0; text-decoration: underline; cursor: pointer;">Delete</button>
+                    </form>
+                    </td>
             </tr>
         }
     }
