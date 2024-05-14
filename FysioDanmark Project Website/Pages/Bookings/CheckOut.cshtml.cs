@@ -36,6 +36,7 @@ public class CheckOut : PageModel
        if (DateTime < DateTime.Now)
         {
             ModelState.AddModelError("", "Invalid date and time");
+            return Page();
         }
         if (!ModelState.IsValid)
         {
