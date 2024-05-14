@@ -87,6 +87,7 @@ namespace FysioDanmark_Project_Website.Repositories
         { 
             Bookings = new Bookings();
             Bookings.Clients = clients;
+            Bookings.Clients.Id = GetAllBookings().Count + 1;
             Bookings.Staff = GetStaff(staff);
             Bookings.DateTime = dateTime;
             Bookings.Services = ShoppingCartService.GetBookingItems();

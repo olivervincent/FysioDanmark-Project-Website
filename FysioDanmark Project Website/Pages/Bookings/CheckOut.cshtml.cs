@@ -6,6 +6,7 @@ using FysioDanmark_Project_Website.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using FysioDanmark_Project_Website.Models;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace FysioDanmark_Project_Website;
 
@@ -16,7 +17,7 @@ public class CheckOut : PageModel
     [BindProperty]
     public Clients Clients { get; set; }
     [BindProperty]
-    public Staff Staffs { get; set; }
+    public string StaffName { get; set; }
     [BindProperty]
     public DateTime DateTime { get; set; }
 
@@ -32,7 +33,15 @@ public class CheckOut : PageModel
 
     public IActionResult OnPost()
     {
-        JsonBookingRepository.AddBooking(Clients, Staffs.Name, DateTime);
+       if (DateTime < DateTime.Now)
+        {
+            ModelState.AddModelError("", "Invalid date and time");
+        }
+        if (!ModelState.IsValid)
+        {
+            return Page();
+        }
+        JsonBookingRepository.AddBooking(Clients, StaffName, DateTime);
         return RedirectToPage("BookingPage", new { Name = Clients.Name});
     }
 }
