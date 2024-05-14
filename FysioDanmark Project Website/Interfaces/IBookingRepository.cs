@@ -16,5 +16,7 @@ namespace FysioDanmark_Project_Website.Interfaces
          void DeleteStaff(int Id);
          void CreateStaff(Staff staff);
          void DeleteBooking(int Id);
+        Staff GetStaff(string name);
+        void UpdateStaff(Staff staff); 
     }
 }

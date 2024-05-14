@@ -12,8 +12,8 @@ namespace FysioDanmark_Project_Website.Repositories
 {
     public class JsonBookingRepository :IBookingRepository
     {
-        private const string JsonFilePath = "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Data/JsonBookings.json";
-        private const string JsonStaffPath = "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Data/JsonStaffs.json";
+        private const string JsonFilePath = "C:\\Users\\Manse\\Documents\\GitHub\\FysioDanmark-Project-Website\\FysioDanmark Project Website\\Data\\JsonBookings.json";
+        private const string JsonStaffPath = "C:\\Users\\Manse\\Documents\\GitHub\\FysioDanmark-Project-Website\\FysioDanmark Project Website\\Data\\JsonStaffs.json";
         private List<Bookings> JsonBookings { get; set; }
         private List<Staff> JsonStaff { get; set; }
         private Bookings Bookings { get; set; }
@@ -22,6 +22,7 @@ namespace FysioDanmark_Project_Website.Repositories
         {
             return JsonFileReader.ReadJsonBooking(JsonFilePath);
         }
+
         
         public Bookings GetBooking(int id)
         {
@@ -46,7 +47,18 @@ namespace FysioDanmark_Project_Website.Repositories
             return JsonFileReader.ReadJsonStaff(JsonStaffPath);
         }
 
-        public void DeleteStaff(int Id)
+        public void UpdateStaff(Staff staff)
+        {
+            if (staff != null)
+            {
+                JsonStaff = JsonFileReader.ReadJsonStaff(JsonStaffPath);
+                DeleteStaff(staff.Id);
+                JsonStaff.Add(staff);
+                JsonFileWritter.WriteToJsonStaff(JsonStaff, JsonStaffPath);
+            }
+        }
+
+    public void DeleteStaff(int Id)
         {
             JsonStaff = JsonFileReader.ReadJsonStaff(JsonStaffPath);
             JsonStaff.RemoveAll(s => s.Id == Id);

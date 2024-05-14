@@ -22,5 +22,7 @@ public class AllStaffModel : PageModel
     {
         repo.DeleteStaff(Id);
         return RedirectToPage("/Index");
+
     }
+
 }

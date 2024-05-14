@@ -9,7 +9,7 @@ namespace FysioDanmark_Project_Website.Repositories
 {
     public class JsonServiceRepository:IServicesRepository
     {
-        string JsonFileName = "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Data/JsonServices.json";
+        string JsonFileName = "C:\\Users\\Manse\\Documents\\GitHub\\FysioDanmark-Project-Website\\FysioDanmark Project Website\\Data\\JsonServices.json";
 
         public List<Models.Services> GetAllServices()
         {

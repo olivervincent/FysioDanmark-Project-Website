@@ -33,9 +33,15 @@
             </td>
             <td>
                 <form method="post">
+                    
                     <input type="hidden" asp-for="@item.Id" name="id">
                     <button type="submit" style="color: indianred; background: none; border: none; padding: 0; text-decoration: underline; cursor: pointer;">Delete</button>
                 </form>
+            </td>
+            <td>
+                <a asp-page="/BookingServices/UpdateStaff" asp-route-id="@item.Name">
+                        Update
+                </a>
             </td>
         </tr>
         }
