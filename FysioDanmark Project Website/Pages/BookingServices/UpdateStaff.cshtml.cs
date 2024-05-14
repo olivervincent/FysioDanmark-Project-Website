@@ -18,7 +18,6 @@ namespace FysioDanmark_Project_Website.Pages.BookingServices
         {
             Staff = repo.GetStaff(name);
             return Page();
-
         }
 
         public IActionResult OnPost()
