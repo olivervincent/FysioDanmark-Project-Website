@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "Halil",
+    "Id": 1,
+    "Specialty": "Fysiotherapist"
+  },
+  {
+    "Name": "Andre",
+    "Id": 2,
+    "Specialty": "Massage"
+  }
+]

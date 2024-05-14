@@ -1,0 +1,57 @@
+@page
+@using FysioDanmark_Project_Website.Services
+@using FysioDanmark_Project_Website.Models
+@model FysioDanmark_Project_Website.BookingPage
+
+<!DOCTYPE html>
+
+<title>Order Confirmation</title>
+<p></p>
+<p>Hello Mr. @Model.ClientName</p>
+<p>Thanks for making this booking!</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Title
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Image     
+        </th>    
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in ShoppingCartService.ShoppingCart)
+    {
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.Title
+            </td>
+            <td>
+                @item.Price
+            </td>
+            <td>
+                @item.ImageName
+            </td>
+            <td>
+                <img src="~/Services/@item.ImageName" width="60" height="70">
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<p>Total Price: @Model.TotalPrice</p> 
+<p>Thanks for your booking. See you soon!</p>
+<a asp-page="/BookingServices/AllServices"
+   class="btn btn-success btn-group-lg pull-right"  >
+    Return to All Services
+</a>

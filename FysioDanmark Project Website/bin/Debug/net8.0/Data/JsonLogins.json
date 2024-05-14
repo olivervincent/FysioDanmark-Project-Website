@@ -1,0 +1,16 @@
+[
+  {
+    "Price": 200.0,
+    "Title": "Programming",
+    "ISBN": "111",
+    "Author": "allan",
+    "ImageName": "Coders.jfif"
+  },
+  {
+    "Price": 123.0,
+    "Title": "test",
+    "ISBN": "123",
+    "Author": "test",
+    "ImageName": "test"
+  }
+]

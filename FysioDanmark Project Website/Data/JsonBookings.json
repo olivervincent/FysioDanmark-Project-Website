@@ -1,0 +1,155 @@
+[
+  {
+    "BookingId": 1,
+    "Clients": {
+      "Id": 7,
+      "Name": "test"
+    },
+    "Services": [
+      {
+        "Price": 200.0,
+        "Title": "Physiotherapy",
+        "Id": "111",
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "2024-05-07T14:37:22.73291+02:00",
+    "Staff": {
+      "Name": "Sture",
+      "Id": 1,
+      "Specialty": "Massage"
+    }
+  },
+  {
+    "BookingId": 2,
+    "Clients": {
+      "Id": 0,
+      "Name": null
+    },
+    "Services": [
+      {
+        "Price": 200.0,
+        "Title": "Physiotherapy",
+        "Id": "111",
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "2024-05-07T14:42:38.225709+02:00",
+    "Staff": {
+      "Name": "Sture",
+      "Id": 1,
+      "Specialty": "Massage"
+    }
+  },
+  {
+    "BookingId": 3,
+    "Clients": {
+      "Id": 89,
+      "Name": "heh"
+    },
+    "Services": [
+      {
+        "Price": 200.0,
+        "Title": "Physiotherapy",
+        "Id": "111",
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "0001-01-01T00:00:00",
+    "Staff": {
+      "Name": "Sture",
+      "Id": 1,
+      "Specialty": "Massage"
+    }
+  },
+  {
+    "BookingId": 4,
+    "Clients": {
+      "Id": 0,
+      "Name": null
+    },
+    "Services": [
+      {
+        "Price": 200.0,
+        "Title": "Physiotherapy",
+        "Id": "111",
+        "ImageName": "Coders.jfif"
+      },
+      {
+        "Price": 200.0,
+        "Title": "Physiotherapy",
+        "Id": "111",
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "0001-01-01T00:00:00",
+    "Staff": {
+      "Name": "Sture",
+      "Id": 1,
+      "Specialty": "Massage"
+    }
+  },
+  {
+    "BookingId": 5,
+    "Clients": {
+      "Id": 987,
+      "Name": "klcsa"
+    },
+    "Services": [
+      {
+        "Price": 200.0,
+        "Title": "Physiotherapy",
+        "Id": "111",
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "0001-01-01T00:00:00",
+    "Staff": {
+      "Name": "Halil",
+      "Id": 2,
+      "Specialty": "Physiotherapist"
+    }
+  },
+  {
+    "BookingId": 6,
+    "Clients": {
+      "Id": 80,
+      "Name": "Test"
+    },
+    "Services": [
+      {
+        "Price": 200.0,
+        "Title": "Physiotherapy",
+        "Id": "111",
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "2024-05-14T00:00:00",
+    "Staff": {
+      "Name": "Halil",
+      "Id": 1,
+      "Specialty": "Fysiotherapist"
+    }
+  },
+  {
+    "BookingId": 7,
+    "Clients": {
+      "Id": 7,
+      "Name": "Hej123"
+    },
+    "Services": [
+      {
+        "Price": 200.0,
+        "Title": "Physiotherapy",
+        "Id": "111",
+        "ImageName": "Coders.jfif"
+      }
+    ],
+    "DateTime": "2024-05-15T00:00:00",
+    "Staff": {
+      "Name": "Halil",
+      "Id": 1,
+      "Specialty": "Fysiotherapist"
+    }
+  }
+]

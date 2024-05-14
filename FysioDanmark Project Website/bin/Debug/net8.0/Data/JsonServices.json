@@ -1,0 +1,20 @@
+[
+  {
+    "Price": 200.0,
+    "Title": "Physiotherapy",
+    "Id": "111",
+    "ImageName": "Coders.jfif"
+  },
+  {
+    "Price": 100.0,
+    "Title": "Massage",
+    "Id": "222",
+    "ImageName": "Java.jfif"
+  },
+  {
+    "Price": 56.0,
+    "Title": "Rehabilitation",
+    "Id": "333",
+    "ImageName": "Marketing_Made_Simple.jfif"
+  }
+ ]

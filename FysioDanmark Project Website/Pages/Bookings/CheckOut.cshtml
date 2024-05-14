@@ -1,0 +1,38 @@
+@page
+@using FysioDanmark_Project_Website.Interfaces
+@using FysioDanmark_Project_Website.Models
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model FysioDanmark_Project_Website.CheckOut
+
+<!DOCTYPE html>
+
+<title>Enter Customer Info</title>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.Clients.Id" class="control-label" hidden> Id </label>
+        <input asp-for="@Model.Clients.Id" class="form-control" value="1" hidden/>
+        <span asp-validation-for="@Model.Clients.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Clients.Name" class="control-label">Name </label>
+        <input asp-for="@Model.Clients.Name" class="form-control" />
+        <span asp-validation-for="@Model.Clients.Name" class="text-danger"></span>
+    </div>
+    <p>Staff</p>
+    <select class="form-group" asp-for="@Model.StaffName">
+        @foreach(Staff staff in Model.JsonBookingRepository.GetAllStaffs())
+        {
+            <option value=@staff.Name>@staff.Name (@staff.Specialty)</option>
+        }
+    </select>
+    <p></p>
+    <div class="form-group">
+        <label asp-for="DateTime"></label>
+        <input class="form-control" asp-for="DateTime" />
+        <span asp-validation-for="DateTime" class="text-danger"></span>
+    </div>
+    <p></p>
+    <div class="form-group">
+        <input type="submit" value="Confirm Booking" class="btn btn-primary" />
+    </div>
+</form>

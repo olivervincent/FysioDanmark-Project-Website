@@ -1,0 +1,44 @@
+@page
+@model FysioDanmark_Project_Website.AllStaffModel
+@{
+    ViewData["Title"] = "AllStaff";
+}
+
+<h1> All Staff </h1>
+<p>
+    <a asp-page="CreateStaff">Create New Staff</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id </th>
+            <th>Name</th>
+            <th>Specialty</th>
+        </tr>
+    </thead>
+    <tbody>
+    @if(Model.AllStaff.Count!=0)
+        {        
+        @foreach (var item in Model.AllStaff)
+        {
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Specialty
+            </td>
+            <td>
+                <form method="post">
+                    <input type="hidden" asp-for="@item.Id" name="id">
+                    <button type="submit" style="color: indianred; background: none; border: none; padding: 0; text-decoration: underline; cursor: pointer;">Delete</button>
+                </form>
+            </td>
+        </tr>
+        }
+        }
+    </tbody>
+</table>

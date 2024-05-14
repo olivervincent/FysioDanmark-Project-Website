@@ -1,0 +1,65 @@
+@page
+@using FysioDanmark_Project_Website.Interfaces
+@using FysioDanmark_Project_Website.Services
+@model FysioDanmark_Project_Website.shoppingCart
+@inject IServicesRepository repository;
+
+<!DOCTYPE html>
+
+<title>Shopping Cart</title>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Title
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Image     
+        </th>            
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in ShoppingCartService.ShoppingCart)
+    {
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.Title
+            </td>
+            <td>
+                @item.Price
+            </td>
+            <td>
+                @item.ImageName
+            </td>
+            <td>
+                <img src="~/Books/@item.ImageName" width="60" height="70">
+            </td>
+            <td>
+            <form method="post">
+                <div class="form-group">
+                    <input type="hidden" name="Id" value="@item.Id"/>
+                    <input type="submit" value="Delete" class="btn btn-danger"/>
+                </div>
+            </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<p>Total Price: @Model.TotalPrice</p> 
+<a asp-page="CheckOut" class="btn btn-primary" style="--blue: indianred">Check Out</a>
+
+<a asp-page="/BookingServices/AllServices"
+   class="btn btn-success btn-group-lg pull-right"  >
+    Add more services
+</a>
