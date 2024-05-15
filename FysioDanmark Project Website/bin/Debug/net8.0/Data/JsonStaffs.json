@@ -2,11 +2,11 @@
   {
     "Name": "Halil",
     "Id": 1,
-    "Specialty": "Fysiotherapist"
+    "Specialty": "Massage"
   },
   {
     "Name": "Andre",
     "Id": 2,
-    "Specialty": "Massage"
+    "Specialty": "Acupuncturist"
   }
 ]

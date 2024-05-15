@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GuEM/ZhQJw1Hdcl0Xo2mwP+dz1Dk6qDxhb3AWCEcRZ40c09653QWpDvrSFv5S/KjQG2IOZSHsnFnTLyg6SeJ0A==",
+  "success": true,
+  "projectFilePath": "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/FysioDanmark Project Website.csproj",
+  "expectedPackageFiles": [
+    "/Users/olivervincent/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

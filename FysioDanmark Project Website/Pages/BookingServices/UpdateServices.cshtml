@@ -1,0 +1,33 @@
+@page "{id}"
+@model FysioDanmark_Project_Website.Pages.BookingServices.UpdateServices
+
+<!DOCTYPE html>
+
+<h1>Update Service</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.Services.Id" class="control-label" hidden></label>
+        <input asp-for="@Model.Services.Id" class="form-control" hidden />
+        <span asp-validation-for="@Model.Services.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Services.ImageName" class="control-label" hidden></label>
+        <input asp-for="@Model.Services.ImageName" class="form-control" hidden />
+        <span asp-validation-for="@Model.Services.ImageName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Services.Title" class="control-label" ></label>
+        <input asp-for="@Model.Services.Title" class="form-control" />
+        <span asp-validation-for="@Model.Services.Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+            <label asp-for="@Model.Services.Price" class="control-label" ></label>
+            <input asp-for="@Model.Services.Price" class="form-control" />
+            <span asp-validation-for="@Model.Services.Price" class="text-danger"></span>
+    </div>
+  
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>

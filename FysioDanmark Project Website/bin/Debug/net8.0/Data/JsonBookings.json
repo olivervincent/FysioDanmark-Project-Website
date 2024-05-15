@@ -9,7 +9,7 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": "111",
+        "Id": 111,
         "ImageName": "Coders.jfif"
       }
     ],
@@ -30,7 +30,7 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": "111",
+        "Id": 111,
         "ImageName": "Coders.jfif"
       }
     ],
@@ -51,7 +51,7 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": "111",
+        "Id": 111,
         "ImageName": "Coders.jfif"
       }
     ],
@@ -72,13 +72,13 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": "111",
+        "Id": 111,
         "ImageName": "Coders.jfif"
       },
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": "111",
+        "Id": 111,
         "ImageName": "Coders.jfif"
       }
     ],
@@ -99,7 +99,7 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": "111",
+        "Id": 111,
         "ImageName": "Coders.jfif"
       }
     ],
@@ -120,32 +120,11 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": "111",
+        "Id": 111,
         "ImageName": "Coders.jfif"
       }
     ],
     "DateTime": "2024-05-14T00:00:00",
-    "Staff": {
-      "Name": "Halil",
-      "Id": 1,
-      "Specialty": "Fysiotherapist"
-    }
-  },
-  {
-    "BookingId": 7,
-    "Clients": {
-      "Id": 7,
-      "Name": "Hej123"
-    },
-    "Services": [
-      {
-        "Price": 200.0,
-        "Title": "Physiotherapy",
-        "Id": "111",
-        "ImageName": "Coders.jfif"
-      }
-    ],
-    "DateTime": "2024-05-15T00:00:00",
     "Staff": {
       "Name": "Halil",
       "Id": 1,

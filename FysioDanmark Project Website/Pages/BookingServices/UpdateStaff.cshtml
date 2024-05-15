@@ -1,0 +1,30 @@
+﻿@page "{name}"
+@model FysioDanmark_Project_Website.Pages.BookingServices.UpdateStaffModel
+@{
+}
+<h1>Update Staff</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.Staff.Id" class="control-label" hidden></label>
+        <input asp-for="@Model.Staff.Id" class="form-control" hidden />
+        <span asp-validation-for="@Model.Staff.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Staff.Name" class="control-label" ></label>
+        <input asp-for="@Model.Staff.Name" class="form-control" />
+        <span asp-validation-for="@Model.Staff.Name" class="text-danger"></span>
+    </div>
+    <div>
+    <select class="form-group" asp-for="@Model.Staff.Specialty"> 
+        Specialty
+        <option value="Fysiotherapist">Fysiotherapist</option>
+        <option value="Massage">Massage</option>
+        <option value="Acupuncturist">Acupuncturist</option>
+    </select>
+    </div>
+  
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>

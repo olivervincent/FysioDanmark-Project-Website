@@ -1,0 +1,35 @@
+@page "{id}"
+@model FysioDanmark_Project_Website.Pages.BookingServices.UpdateBooking
+
+<h1>Update Booking</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.Booking.BookingId" class="control-label" hidden></label>
+        <input asp-for="@Model.Booking.BookingId" class="form-control" hidden />
+        <span asp-validation-for="@Model.Booking.BookingId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Booking.Clients.Name" class="control-label"></label>
+        <input asp-for="@Model.Booking.Clients.Name" class="form-control" />
+        <span asp-validation-for="@Model.Booking.Clients.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Booking.Services" class="control-label"></label>
+        <input asp-for="@Model.Booking.Services" class="form-control" readonly/>
+        <span asp-validation-for="@Model.Booking.Services" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Booking.Staff.Name" class="control-label"> Staff Name</label>
+        <input asp-for="@Model.Booking.Staff.Name" class="form-control" readonly/>
+        <span asp-validation-for="@Model.Booking.Staff.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Booking.DateTime" class="control-label"></label>
+        <input asp-for="@Model.Booking.DateTime" class="form-control" readonly/>
+        <span asp-validation-for="@Model.Booking.DateTime" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
