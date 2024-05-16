@@ -1,20 +1,7 @@
 [
   {
-    "Price": 100.0,
-    "Title": "Massage",
-    "Id": 222,
-    "ImageName": "Java.jfif"
-  },
-  {
-    "Price": 56.0,
-    "Title": "Rehabilitation",
-    "Id": 333,
-    "ImageName": "Marketing_Made_Simple.jfif"
-  },
-  {
-    "Price": 152.0,
-    "Title": "Massage",
-    "Id": 222,
-    "ImageName": "Java.jfif"
+    "Price": 112.0,
+    "Title": "Test",
+    "Id": 12
   }
 ]

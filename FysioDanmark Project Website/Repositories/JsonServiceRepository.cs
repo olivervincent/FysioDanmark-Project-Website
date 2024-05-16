@@ -34,7 +34,7 @@ namespace FysioDanmark_Project_Website.Repositories
             if (service != null)
             {
                 List<Models.Services> servicesList = JsonFileReader.ReadJsonService(JsonFileName);
-                DeleteService(service.Id);
+                servicesList.RemoveAll(s => s.Id == service.Id);
                 servicesList.Add(service);
                 JsonFileWritter.WriteToJsonService(servicesList, JsonFileName);
             }

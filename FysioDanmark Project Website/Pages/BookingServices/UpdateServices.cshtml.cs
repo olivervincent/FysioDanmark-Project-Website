@@ -23,6 +23,6 @@ public class UpdateServices : PageModel
     {
             
         repo.UpdateService(Services);
-        return RedirectToPage("AllBookings");
+        return RedirectToPage("ManageServices");
     }
 }

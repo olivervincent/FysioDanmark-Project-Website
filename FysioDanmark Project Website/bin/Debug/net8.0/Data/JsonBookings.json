@@ -1,26 +1,5 @@
 [
   {
-    "BookingId": 1,
-    "Clients": {
-      "Id": 7,
-      "Name": "test"
-    },
-    "Services": [
-      {
-        "Price": 200.0,
-        "Title": "Physiotherapy",
-        "Id": 111,
-        "ImageName": "Coders.jfif"
-      }
-    ],
-    "DateTime": "2024-05-07T14:37:22.73291+02:00",
-    "Staff": {
-      "Name": "Sture",
-      "Id": 1,
-      "Specialty": "Massage"
-    }
-  },
-  {
     "BookingId": 2,
     "Clients": {
       "Id": 0,
@@ -129,6 +108,20 @@
       "Name": "Halil",
       "Id": 1,
       "Specialty": "Fysiotherapist"
+    }
+  },
+  {
+    "BookingId": 1,
+    "Clients": {
+      "Id": 0,
+      "Name": "Coolio"
+    },
+    "Services": [],
+    "DateTime": "2024-05-07T14:37:22.732",
+    "Staff": {
+      "Name": "Sture",
+      "Id": 0,
+      "Specialty": null
     }
   }
 ]

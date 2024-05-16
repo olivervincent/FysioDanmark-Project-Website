@@ -47,7 +47,7 @@ namespace FysioDanmark_Project_Website.Repositories
             if (booking != null)
             {
                 JsonBookings = JsonFileReader.ReadJsonBooking(JsonFilePath);
-                DeleteBooking(booking.BookingId);
+                JsonBookings.RemoveAll(s => s.BookingId == booking.BookingId);
                 JsonBookings.Add(booking);
                 JsonFileWritter.WriteToJsonBooking(JsonBookings, JsonFilePath);
             }
