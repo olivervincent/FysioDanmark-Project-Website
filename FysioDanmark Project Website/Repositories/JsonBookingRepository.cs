@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.JavaScript;
 using System.Threading.Tasks;
+using System.Xml.XPath;
+using FysioDanmark_Project_Website.Data;
 using FysioDanmark_Project_Website.Services;
 using Newtonsoft.Json;
 
@@ -12,15 +14,15 @@ namespace FysioDanmark_Project_Website.Repositories
 {
     public class JsonBookingRepository :IBookingRepository
     {
-        private const string JsonFilePath = "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Data/JsonBookings.json";
-        private const string JsonStaffPath = "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Data/JsonStaffs.json";
+        private string JsonBookingsPath = new Paths().JsonBookingsPath;
+        private string JsonStaffPath = new Paths().JsonStaffPath;
         private List<Bookings> JsonBookings { get; set; }
         private List<Staff> JsonStaff { get; set; }
         private Bookings Bookings { get; set; }
         
         public List<Models.Bookings> GetAllBookings()
         {
-            return JsonFileReader.ReadJsonBooking(JsonFilePath);
+            return JsonFileReader.ReadJsonBooking(JsonBookingsPath);
         }
 
         
@@ -39,17 +41,17 @@ namespace FysioDanmark_Project_Website.Repositories
         {
             JsonBookings = GetAllBookings();
             JsonBookings.RemoveAll(s => s.BookingId == id);
-            JsonFileWritter.WriteToJsonBooking(JsonBookings, JsonFilePath);
+            JsonFileWritter.WriteToJsonBooking(JsonBookings, JsonBookingsPath);
         }
         
         public void UpdateBooking(Bookings booking)
         {
             if (booking != null)
             {
-                JsonBookings = JsonFileReader.ReadJsonBooking(JsonFilePath);
+                JsonBookings = JsonFileReader.ReadJsonBooking(JsonBookingsPath);
                 JsonBookings.RemoveAll(s => s.BookingId == booking.BookingId);
                 JsonBookings.Add(booking);
-                JsonFileWritter.WriteToJsonBooking(JsonBookings, JsonFilePath);
+                JsonFileWritter.WriteToJsonBooking(JsonBookings, JsonBookingsPath);
             }
         }
         
@@ -114,11 +116,18 @@ namespace FysioDanmark_Project_Website.Repositories
             Bookings.Staff = GetStaff(staff);
             Bookings.DateTime = dateTime;
             Bookings.Services = ShoppingCartService.GetBookingItems();
-            Bookings.BookingId = JsonFileReader.ReadJsonBooking(JsonFilePath).Count + 1;
+            double totalPrice = 0;
+            foreach (Models.Services service  in ShoppingCartService.GetBookingItems())
+            {
+                totalPrice = totalPrice + service.Price;
+            }
+
+            Bookings.TotalPrice = totalPrice;
+            Bookings.BookingId = JsonFileReader.ReadJsonBooking(JsonBookingsPath).Count + 1;
             
-            JsonBookings = JsonFileReader.ReadJsonBooking(JsonFilePath);
+            JsonBookings = JsonFileReader.ReadJsonBooking(JsonBookingsPath);
             JsonBookings.Add(Bookings);
-            JsonFileWritter.WriteToJsonBooking(JsonBookings, JsonFilePath);
+            JsonFileWritter.WriteToJsonBooking(JsonBookings, JsonBookingsPath);
         }
 
     }

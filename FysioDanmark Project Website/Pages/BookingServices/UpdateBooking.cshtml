@@ -14,16 +14,15 @@
         <input asp-for="@Model.Booking.Clients.Name" class="form-control" />
         <span asp-validation-for="@Model.Booking.Clients.Name" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="@Model.Booking.Services" class="control-label"></label>
-        <input asp-for="@Model.Booking.Services" class="form-control" readonly/>
-        <span asp-validation-for="@Model.Booking.Services" class="text-danger"></span>
-    </div>
+        <label asp-for="@Model.serviceNames" class="control-label">Services</label>
+        <input asp-for="@Model.serviceNames" class="form-control" readonly/>
     <div class="form-group">
         <label asp-for="@Model.Booking.Staff.Name" class="control-label"> Staff Name</label>
         <input asp-for="@Model.Booking.Staff.Name" class="form-control" readonly/>
         <span asp-validation-for="@Model.Booking.Staff.Name" class="text-danger"></span>
     </div>
+    <label asp-for="@Model.Booking.TotalPrice" class="control-label">Total Price</label>
+    <input asp-for="@Model.Booking.TotalPrice" class="form-control" readonly/>
     <div class="form-group">
         <label asp-for="@Model.Booking.DateTime" class="control-label"></label>
         <input asp-for="@Model.Booking.DateTime" class="form-control" readonly/>

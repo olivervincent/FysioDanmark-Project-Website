@@ -4,39 +4,40 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FysioDanmark_Project_Website.Data;
 
 namespace FysioDanmark_Project_Website.Repositories
 {
     public class JsonServiceRepository:IServicesRepository
     {
-        string JsonFileName = "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Data/JsonServices.json";
+        string JsonServicePath = new Paths().JsonServicesPath;
 
         public List<Models.Services> GetAllServices()
         {
-            return JsonFileReader.ReadJsonService(JsonFileName);
+            return JsonFileReader.ReadJsonService(JsonServicePath);
         }
         public void AddService(Models.Services service)
         {
             List<Models.Services> serviceList = GetAllServices().ToList();
             serviceList.Add(service);
-            JsonFileWritter.WriteToJsonService(serviceList, JsonFileName);
+            JsonFileWritter.WriteToJsonService(serviceList, JsonServicePath);
         }
 
         public void DeleteService(int id)
         {
             List<Models.Services> serviceList = GetAllServices();
             serviceList.RemoveAll(service => service.Id == id);;
-            JsonFileWritter.WriteToJsonService(serviceList, JsonFileName);
+            JsonFileWritter.WriteToJsonService(serviceList, JsonServicePath);
         }
 
         public void UpdateService(Models.Services service)
         {
             if (service != null)
             {
-                List<Models.Services> servicesList = JsonFileReader.ReadJsonService(JsonFileName);
+                List<Models.Services> servicesList = JsonFileReader.ReadJsonService(JsonServicePath);
                 servicesList.RemoveAll(s => s.Id == service.Id);
                 servicesList.Add(service);
-                JsonFileWritter.WriteToJsonService(servicesList, JsonFileName);
+                JsonFileWritter.WriteToJsonService(servicesList, JsonServicePath);
             }
         }
         public Models.Services GetService(int id)

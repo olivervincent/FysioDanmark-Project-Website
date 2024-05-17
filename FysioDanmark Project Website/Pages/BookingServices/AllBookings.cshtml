@@ -12,6 +12,7 @@
         <th>Client</th>
         <th>Staff assigned</th>
         <th>Services</th>
+        <th>Total Price</th>
         <th>Time booked</th>
     </tr>
     </thead>
@@ -35,6 +36,9 @@
                     {
                         <p>- @services.Title</p>
                     }
+                </td>
+                <td>
+                    @item.TotalPrice
                 </td>
                 <td>
                     @item.DateTime

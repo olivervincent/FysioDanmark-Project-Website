@@ -9,6 +9,8 @@ public class UpdateBooking : PageModel
     private IBookingRepository repo;
     [BindProperty]
     public Models.Bookings Booking { get; set; }
+    [BindProperty]
+    public string serviceNames { get; set; }
     public UpdateBooking(IBookingRepository repository)
     {
         repo = repository;
@@ -16,6 +18,10 @@ public class UpdateBooking : PageModel
     public IActionResult OnGet(int id)
     {
         Booking = repo.GetBooking(id);
+        foreach (Models.Services service in Booking.Services)
+        {
+            serviceNames += service.Title + ", ";
+        }
         return Page();
     }
 

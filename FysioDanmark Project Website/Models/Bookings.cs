@@ -14,5 +14,6 @@ namespace FysioDanmark_Project_Website.Models
         public List<Services> Services { get; set; }
         public DateTime DateTime { get; set; }
         public Staff Staff { get; set; }
+        public double TotalPrice { get; set; }
     }
 }
