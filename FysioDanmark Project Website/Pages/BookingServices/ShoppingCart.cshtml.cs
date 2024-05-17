@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FysioDanmark_Project_Website;
 
-public class shoppingCart : PageModel
+public class ShoppingCart : PageModel
 {
     [BindProperty]
     public Models.Services Services { get; set; }
@@ -15,7 +15,7 @@ public class shoppingCart : PageModel
     private Repositories.JsonServiceRepository repo;
     public ShoppingCartService ShoppingCartService { get; set; }
     
-    public shoppingCart(Repositories.JsonServiceRepository repository, ShoppingCartService shoppingCartService)
+    public ShoppingCart(Repositories.JsonServiceRepository repository, ShoppingCartService shoppingCartService)
     {
         repo = repository;
         ShoppingCartService = shoppingCartService;

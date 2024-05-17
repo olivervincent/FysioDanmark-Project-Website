@@ -13,6 +13,7 @@ namespace FysioDanmark_Project_Website;
 public class CheckOut : PageModel
 {
     public JsonBookingRepository JsonBookingRepository { get; set; }
+    public JsonStaffRepository JsonStaffRepository { get; set; }
     
     [BindProperty]
     public Clients Clients { get; set; }
@@ -21,9 +22,10 @@ public class CheckOut : PageModel
     [BindProperty]
     public DateTime DateTime { get; set; }
 
-    public CheckOut(JsonBookingRepository repository)
+    public CheckOut(JsonBookingRepository repository, JsonStaffRepository staffRepository)
     {
         JsonBookingRepository = repository;
+        JsonStaffRepository = staffRepository;
     }
     
     public IActionResult OnGet()

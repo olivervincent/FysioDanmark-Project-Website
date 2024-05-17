@@ -30,6 +30,7 @@ namespace FysioDanmark_Project_Website
             services.AddTransient<IServicesRepository,Repositories.JsonServiceRepository>();
             services.AddScoped<FysioDanmark_Project_Website.Repositories.JsonServiceRepository>();
             services.AddScoped<IBookingRepository, JsonBookingRepository>();
+            services.AddTransient<IStaffRepository, Repositories.JsonStaffRepository>();
             
             services.AddSingleton<ShoppingCartService>();
             services.AddSingleton<JsonBookingRepository>();

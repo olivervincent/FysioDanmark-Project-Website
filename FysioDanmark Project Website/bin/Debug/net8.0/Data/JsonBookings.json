@@ -1,26 +1,5 @@
 [
   {
-    "BookingId": 2,
-    "Clients": {
-      "Id": 0,
-      "Name": null
-    },
-    "Services": [
-      {
-        "Price": 200.0,
-        "Title": "Physiotherapy",
-        "Id": 111
-      }
-    ],
-    "DateTime": "2024-05-07T14:42:38.225709+02:00",
-    "Staff": {
-      "Name": "Sture",
-      "Id": 1,
-      "Specialty": "Massage"
-    },
-    "TotalPrice": 0.0
-  },
-  {
     "BookingId": 3,
     "Clients": {
       "Id": 89,

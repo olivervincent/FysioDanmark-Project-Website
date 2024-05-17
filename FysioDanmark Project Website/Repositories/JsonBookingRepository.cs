@@ -12,12 +12,10 @@ using Newtonsoft.Json;
 
 namespace FysioDanmark_Project_Website.Repositories
 {
-    public class JsonBookingRepository :IBookingRepository
+    public class JsonBookingRepository:IBookingRepository
     {
         private string JsonBookingsPath = new Paths().JsonBookingsPath;
-        private string JsonStaffPath = new Paths().JsonStaffPath;
         private List<Bookings> JsonBookings { get; set; }
-        private List<Staff> JsonStaff { get; set; }
         private Bookings Bookings { get; set; }
         
         public List<Models.Bookings> GetAllBookings()
@@ -54,66 +52,12 @@ namespace FysioDanmark_Project_Website.Repositories
                 JsonFileWritter.WriteToJsonBooking(JsonBookings, JsonBookingsPath);
             }
         }
-        
-        public List<Models.Staff> GetAllStaff()
-        {
-            return JsonFileReader.ReadJsonStaff(JsonStaffPath);
-        }
-
-        public void UpdateStaff(Staff staff)
-        {
-            if (staff != null)
-            {
-                JsonStaff = JsonFileReader.ReadJsonStaff(JsonStaffPath);
-                DeleteStaff(staff.Id);
-                JsonStaff.Add(staff);
-                JsonFileWritter.WriteToJsonStaff(JsonStaff, JsonStaffPath);
-            }
-        }
-
-    public void DeleteStaff(int Id)
-        {
-            JsonStaff = JsonFileReader.ReadJsonStaff(JsonStaffPath);
-            JsonStaff.RemoveAll(s => s.Id == Id);
-            JsonFileWritter.WriteToJsonStaff(JsonStaff, JsonStaffPath);
-        }
-
-        public void CreateStaff(Staff staff)
-        {
-            JsonStaff = JsonFileReader.ReadJsonStaff(JsonStaffPath);
-            int Id = 1;
-            if (JsonStaff.Any()) 
-            {
-                Id = JsonStaff.Max(x => x.Id) + 1;
-            }
-            staff.Id = Id;
-
-            JsonStaff.Add(staff);
-            JsonFileWritter.WriteToJsonStaff(JsonStaff.OrderBy(x => x.Id).ToList(), JsonStaffPath);
-        }
-
-        public Staff GetStaff(string name)
-        {
-            foreach (var item in GetAllStaffs())
-            {
-                if (item.Name == name)
-                    return item;
-            }
-
-            return new Models.Staff();
-        }
-        
-        public List<Models.Staff> GetAllStaffs()
-        {
-            return JsonFileReader.ReadJsonStaff(JsonStaffPath);
-        }
-        
         public void AddBooking(Clients clients, string staff, DateTime dateTime)
         { 
             Bookings = new Bookings();
             Bookings.Clients = clients;
             Bookings.Clients.Id = GetAllBookings().Count + 1;
-            Bookings.Staff = GetStaff(staff);
+            Bookings.Staff = new JsonStaffRepository().GetStaff(staff);
             Bookings.DateTime = dateTime;
             Bookings.Services = ShoppingCartService.GetBookingItems();
             double totalPrice = 0;

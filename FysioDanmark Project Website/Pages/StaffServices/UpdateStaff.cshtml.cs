@@ -7,10 +7,10 @@ namespace FysioDanmark_Project_Website.Pages.BookingServices
 {
     public class UpdateStaffModel : PageModel
     {
-        private IBookingRepository repo;
+        private IStaffRepository repo;
         [BindProperty]
         public Models.Staff Staff { get; set; }
-        public UpdateStaffModel(IBookingRepository repository)
+        public UpdateStaffModel(IStaffRepository repository)
         {
             repo = repository;
         }

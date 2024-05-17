@@ -6,11 +6,11 @@ namespace FysioDanmark_Project_Website;
 
 public class CreateStaff : PageModel
 {
-    private IBookingRepository repository;
+    private IStaffRepository repository;
     [BindProperty]
     public Models.Staff Staff { get; set; }
     public List<Models.Staff> AllStaff { get; set; }
-    public CreateStaff(IBookingRepository repo)
+    public CreateStaff(IStaffRepository repo)
     {
         repository = repo;
     }

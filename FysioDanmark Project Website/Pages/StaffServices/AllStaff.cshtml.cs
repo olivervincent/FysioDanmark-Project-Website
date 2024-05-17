@@ -6,8 +6,8 @@ namespace FysioDanmark_Project_Website;
 
 public class AllStaffModel : PageModel
 {
-    private IBookingRepository repo;
-    public AllStaffModel(IBookingRepository repository)
+    private IStaffRepository repo;
+    public AllStaffModel(IStaffRepository repository)
     {
         repo = repository;
     }
@@ -21,7 +21,8 @@ public class AllStaffModel : PageModel
     public IActionResult OnPost(int Id)
     {
         repo.DeleteStaff(Id);
-        return RedirectToPage("/Index");
+        AllStaff = repo.GetAllStaff();
+        return RedirectToPage("AllStaff");
 
     }
 

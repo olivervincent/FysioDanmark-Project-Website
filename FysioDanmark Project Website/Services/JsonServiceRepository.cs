@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FysioDanmark_Project_Website.Data;
 
 namespace FysioDanmark_Project_Website.Services
 {
     public class JsonServiceRepository
     {
-        string JsonFileName= "/Users/olivervincent/Desktop/Zealand/FysioDanmark Project Website/FysioDanmark Project Website/Data/JsonServices.json";
+        string JsonFileName= new Paths().JsonServicesPath;
 
         public List<Models.Services> GetAllServices()
         {

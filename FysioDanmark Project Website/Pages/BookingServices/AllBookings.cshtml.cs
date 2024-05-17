@@ -13,10 +13,12 @@ namespace FysioDanmark_Project_Website
     public class AllBookingsModel : PageModel
     {
         
-        private IBookingRepository catalog;
-        public AllBookingsModel(IBookingRepository repository)
+        private IBookingRepository bookingRepo;
+        private IStaffRepository staffRepo;
+        public AllBookingsModel(IBookingRepository bookingrepository, IStaffRepository staffRepository)
         {
-            catalog = repository;
+            bookingRepo = bookingrepository;
+            staffRepo = staffRepository;
         }
         public List<Models.Bookings> AllBookings { get; private set; } 
         public List<Models.Staff> AllStaff { get; private set; } 
@@ -25,14 +27,14 @@ namespace FysioDanmark_Project_Website
         public Models.Bookings Bookings { get; set; }
         public IActionResult OnGet()
         {
-            AllBookings = catalog.GetAllBookings();
-            AllStaff = catalog.GetAllStaff();
+            AllBookings = bookingRepo.GetAllBookings();
+            AllStaff = staffRepo.GetAllStaff();
             return Page();
         }
         public IActionResult OnPost(int id)
         {
-            catalog.DeleteBooking(id);
-            AllBookings = catalog.GetAllBookings();
+            bookingRepo.DeleteBooking(id);
+            AllBookings = bookingRepo.GetAllBookings();
             return RedirectToPage("AllBookings");
         }
     }

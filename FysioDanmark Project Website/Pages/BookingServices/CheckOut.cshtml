@@ -20,7 +20,7 @@
     </div>
     <p>Staff</p>
     <select class="form-group" asp-for="@Model.StaffName">
-        @foreach(Staff staff in Model.JsonBookingRepository.GetAllStaffs())
+        @foreach(Staff staff in Model.JsonStaffRepository.GetAllStaffs())
         {
             <option value=@staff.Name>@staff.Name (@staff.Specialty)</option>
         }

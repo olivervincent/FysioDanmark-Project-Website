@@ -2,7 +2,7 @@ using FysioDanmark_Project_Website.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace FysioDanmark_Project_Website.Pages.BookingServices;
+namespace FysioDanmark_Project_Website.Pages.ServiceServices;
 
 public class UpdateServices : PageModel
 {
