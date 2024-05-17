@@ -9,8 +9,7 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": 111,
-        "ImageName": "Coders.jfif"
+        "Id": 111
       }
     ],
     "DateTime": "2024-05-07T14:42:38.225709+02:00",
@@ -18,7 +17,8 @@
       "Name": "Sture",
       "Id": 1,
       "Specialty": "Massage"
-    }
+    },
+    "TotalPrice": 0.0
   },
   {
     "BookingId": 3,
@@ -30,8 +30,7 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": 111,
-        "ImageName": "Coders.jfif"
+        "Id": 111
       }
     ],
     "DateTime": "0001-01-01T00:00:00",
@@ -39,7 +38,8 @@
       "Name": "Sture",
       "Id": 1,
       "Specialty": "Massage"
-    }
+    },
+    "TotalPrice": 0.0
   },
   {
     "BookingId": 4,
@@ -51,14 +51,12 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": 111,
-        "ImageName": "Coders.jfif"
+        "Id": 111
       },
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": 111,
-        "ImageName": "Coders.jfif"
+        "Id": 111
       }
     ],
     "DateTime": "0001-01-01T00:00:00",
@@ -66,7 +64,8 @@
       "Name": "Sture",
       "Id": 1,
       "Specialty": "Massage"
-    }
+    },
+    "TotalPrice": 0.0
   },
   {
     "BookingId": 5,
@@ -78,8 +77,7 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": 111,
-        "ImageName": "Coders.jfif"
+        "Id": 111
       }
     ],
     "DateTime": "0001-01-01T00:00:00",
@@ -87,7 +85,8 @@
       "Name": "Halil",
       "Id": 2,
       "Specialty": "Physiotherapist"
-    }
+    },
+    "TotalPrice": 0.0
   },
   {
     "BookingId": 6,
@@ -99,8 +98,7 @@
       {
         "Price": 200.0,
         "Title": "Physiotherapy",
-        "Id": 111,
-        "ImageName": "Coders.jfif"
+        "Id": 111
       }
     ],
     "DateTime": "2024-05-14T00:00:00",
@@ -108,7 +106,8 @@
       "Name": "Halil",
       "Id": 1,
       "Specialty": "Fysiotherapist"
-    }
+    },
+    "TotalPrice": 0.0
   },
   {
     "BookingId": 1,
@@ -122,6 +121,38 @@
       "Name": "Sture",
       "Id": 0,
       "Specialty": null
-    }
+    },
+    "TotalPrice": 0.0
+  },
+  {
+    "BookingId": 7,
+    "Clients": {
+      "Id": 7,
+      "Name": "Rami"
+    },
+    "Services": [
+      {
+        "Price": 112.0,
+        "Title": "Test",
+        "Id": 12
+      },
+      {
+        "Price": 112.0,
+        "Title": "Test",
+        "Id": 12
+      },
+      {
+        "Price": 112.0,
+        "Title": "Test",
+        "Id": 12
+      }
+    ],
+    "DateTime": "2024-05-17T00:00:00",
+    "Staff": {
+      "Name": "Halil",
+      "Id": 1,
+      "Specialty": "Massage"
+    },
+    "TotalPrice": 336.0
   }
 ]
