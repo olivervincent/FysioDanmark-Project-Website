@@ -5,7 +5,6 @@ using FysioDanmark_Project_Website.Repositories;
 using FysioDanmark_Project_Website.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using FysioDanmark_Project_Website.Models;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace FysioDanmark_Project_Website;

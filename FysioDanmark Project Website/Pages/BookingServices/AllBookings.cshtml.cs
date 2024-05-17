@@ -15,7 +15,7 @@ namespace FysioDanmark_Project_Website
         
         private IBookingRepository bookingRepo;
         private IStaffRepository staffRepo;
-        public AllBookingsModel(IBookingRepository bookingrepository, IStaffRepository staffRepository)
+        public AllBookingsModel(IBookingRepository bookingrepository, IStaffRepository? staffRepository)
         {
             bookingRepo = bookingrepository;
             staffRepo = staffRepository;

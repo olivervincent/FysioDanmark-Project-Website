@@ -8,7 +8,7 @@ namespace FysioDanmark_Project_Website.Models
     public class Services
     {
         public double Price { get; set; }
-        public string Title { get; set; }
+        public string? Title { get; set; }
         public int Id { get; set; }
     }
 }

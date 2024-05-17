@@ -18,5 +18,28 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+.footer {
+  margin-top: auto;
+  height: 50px;
+  background-color: #323539;
+  width: 100%;
+}
+
+.navbar-custom {
+  background-color: #323539;
+}
+
+.navbar-nav {
+  padding-left: 30%; 
+}
+
+img[src="/images/FysioDanmar_hvid.png"] {
+  margin-right: 20px;
+}
+
+
