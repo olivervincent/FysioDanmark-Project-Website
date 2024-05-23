@@ -3,5 +3,10 @@
     "Name": "Ramiiii",
     "Id": 3,
     "Specialty": "Fysiotherapist"
+  },
+  {
+    "Name": "Miki",
+    "Id": 4,
+    "Specialty": "Acupuncturist"
   }
 ]
