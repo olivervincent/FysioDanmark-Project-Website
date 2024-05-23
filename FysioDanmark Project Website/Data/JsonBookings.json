@@ -133,5 +133,31 @@
       "Specialty": "Massage"
     },
     "TotalPrice": 336.0
+  },
+  {
+    "BookingId": 7,
+    "Clients": {
+      "Id": 7,
+      "Name": "Oliver"
+    },
+    "Services": [
+      {
+        "Price": 112.0,
+        "Title": "Test",
+        "Id": 12
+      },
+      {
+        "Price": 112.0,
+        "Title": "Test",
+        "Id": 12
+      }
+    ],
+    "DateTime": "2024-05-24T00:00:00",
+    "Staff": {
+      "Name": "Miki",
+      "Id": 4,
+      "Specialty": "Acupuncturist"
+    },
+    "TotalPrice": 224.0
   }
 ]

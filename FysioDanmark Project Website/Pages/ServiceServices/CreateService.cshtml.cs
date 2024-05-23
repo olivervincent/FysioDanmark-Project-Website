@@ -27,8 +27,10 @@ public class CreateServiceModel : PageModel
 
     public IActionResult OnPost()
     {
+        Services.Id = 1;
         if (!ModelState.IsValid)
         {
+            AllServices = repository.GetAllServices();
             return Page();
         }
         repository.AddService(Services);

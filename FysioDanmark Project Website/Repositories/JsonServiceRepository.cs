@@ -19,6 +19,12 @@ namespace FysioDanmark_Project_Website.Repositories
         public void AddService(Models.Services service)
         {
             List<Models.Services> serviceList = GetAllServices().ToList();
+            int Id = service.Id;
+            if (serviceList.Any()) 
+            {
+                Id = serviceList.Max(x => x.Id) + 1;
+            }
+            service.Id = Id;
             serviceList.Add(service);
             JsonFileWritter.WriteToJsonService(serviceList, JsonServicePath);
         }
