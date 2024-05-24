@@ -27,8 +27,7 @@ public class UpdateBooking : PageModel
 
     public IActionResult OnPost()
     {
-            
         repo.UpdateBooking(Booking);
-        return RedirectToPage("AllServices");
+        return RedirectToPage("AllBookings");
     }
 }

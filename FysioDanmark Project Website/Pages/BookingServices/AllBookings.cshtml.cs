@@ -22,9 +22,10 @@ namespace FysioDanmark_Project_Website
         }
         public List<Models.Bookings> AllBookings { get; private set; } 
         public List<Models.Staff> AllStaff { get; private set; } 
-       
         [BindProperty]
         public Models.Bookings Bookings { get; set; }
+        
+        
         public IActionResult OnGet()
         {
             AllBookings = bookingRepo.GetAllBookings();

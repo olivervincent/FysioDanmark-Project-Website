@@ -1,143 +1,8 @@
 [
   {
-    "BookingId": 3,
-    "Clients": {
-      "Id": 89,
-      "Name": "heh"
-    },
-    "Services": [
-      {
-        "Price": 200.0,
-        "Title": "Physiotherapy",
-        "Id": 111
-      }
-    ],
-    "DateTime": "0001-01-01T00:00:00",
-    "Staff": {
-      "Name": "Sture",
-      "Id": 1,
-      "Specialty": "Massage"
-    },
-    "TotalPrice": 0.0
-  },
-  {
-    "BookingId": 4,
-    "Clients": {
-      "Id": 0,
-      "Name": null
-    },
-    "Services": [
-      {
-        "Price": 200.0,
-        "Title": "Physiotherapy",
-        "Id": 111
-      },
-      {
-        "Price": 200.0,
-        "Title": "Physiotherapy",
-        "Id": 111
-      }
-    ],
-    "DateTime": "0001-01-01T00:00:00",
-    "Staff": {
-      "Name": "Sture",
-      "Id": 1,
-      "Specialty": "Massage"
-    },
-    "TotalPrice": 0.0
-  },
-  {
-    "BookingId": 5,
-    "Clients": {
-      "Id": 987,
-      "Name": "klcsa"
-    },
-    "Services": [
-      {
-        "Price": 200.0,
-        "Title": "Physiotherapy",
-        "Id": 111
-      }
-    ],
-    "DateTime": "0001-01-01T00:00:00",
-    "Staff": {
-      "Name": "Halil",
-      "Id": 2,
-      "Specialty": "Physiotherapist"
-    },
-    "TotalPrice": 0.0
-  },
-  {
-    "BookingId": 6,
-    "Clients": {
-      "Id": 80,
-      "Name": "Test"
-    },
-    "Services": [
-      {
-        "Price": 200.0,
-        "Title": "Physiotherapy",
-        "Id": 111
-      }
-    ],
-    "DateTime": "2024-05-14T00:00:00",
-    "Staff": {
-      "Name": "Halil",
-      "Id": 1,
-      "Specialty": "Fysiotherapist"
-    },
-    "TotalPrice": 0.0
-  },
-  {
     "BookingId": 1,
     "Clients": {
-      "Id": 0,
-      "Name": "Coolio"
-    },
-    "Services": [],
-    "DateTime": "2024-05-07T14:37:22.732",
-    "Staff": {
-      "Name": "Sture",
-      "Id": 0,
-      "Specialty": null
-    },
-    "TotalPrice": 0.0
-  },
-  {
-    "BookingId": 7,
-    "Clients": {
-      "Id": 7,
-      "Name": "Rami"
-    },
-    "Services": [
-      {
-        "Price": 112.0,
-        "Title": "Test",
-        "Id": 12
-      },
-      {
-        "Price": 112.0,
-        "Title": "Test",
-        "Id": 12
-      },
-      {
-        "Price": 112.0,
-        "Title": "Test",
-        "Id": 12
-      }
-    ],
-    "DateTime": "2024-05-17T00:00:00",
-    "Staff": {
-      "Name": "Halil",
       "Id": 1,
-      "Specialty": "Massage"
-    },
-    "TotalPrice": 336.0
-  },
-  {
-    "BookingId": 7,
-    "Clients": {
-      "Id": 7,
       "Name": "Oliver"
     },
     "Services": [
@@ -152,11 +17,11 @@
         "Id": 12
       }
     ],
-    "DateTime": "2024-05-24T00:00:00",
+    "DateTime": "2024-05-25T00:00:00",
     "Staff": {
-      "Name": "Miki",
-      "Id": 4,
-      "Specialty": "Acupuncturist"
+      "Name": "Ramiiii",
+      "Id": 3,
+      "Specialty": "Fysiotherapist"
     },
     "TotalPrice": 224.0
   }
