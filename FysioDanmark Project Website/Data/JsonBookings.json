@@ -2,15 +2,10 @@
   {
     "BookingId": 1,
     "Clients": {
-      "Id": 1,
-      "Name": "Oliver"
+      "Id": 0,
+      "Name": "asdasds"
     },
     "Services": [
-      {
-        "Price": 112.0,
-        "Title": "Test",
-        "Id": 12
-      },
       {
         "Price": 112.0,
         "Title": "Test",
@@ -20,9 +15,9 @@
     "DateTime": "2024-05-25T00:00:00",
     "Staff": {
       "Name": "Ramiiii",
-      "Id": 3,
-      "Specialty": "Fysiotherapist"
+      "Id": 0,
+      "Specialty": null
     },
-    "TotalPrice": 224.0
+    "TotalPrice": 112.0
   }
 ]
