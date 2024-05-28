@@ -1,12 +1,27 @@
 [
   {
-    "Name": "Ramiiii",
-    "Id": 3,
-    "Specialty": "Fysiotherapist"
-  },
-  {
     "Name": "Miki",
     "Id": 4,
     "Specialty": "Acupuncturist"
+  },
+  {
+    "Name": "Sture",
+    "Id": 5,
+    "Specialty": "Massage"
+  },
+  {
+    "Name": "Jens Peter",
+    "Id": 6,
+    "Specialty": "Fysiotherapist"
+  },
+  {
+    "Name": "Andre",
+    "Id": 7,
+    "Specialty": "Acupuncturist"
+  },
+  {
+    "Name": "Halil",
+    "Id": 8,
+    "Specialty": "Massage"
   }
 ]

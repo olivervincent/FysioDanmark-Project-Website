@@ -1,17 +1,17 @@
 [
   {
-    "Price": 112.0,
-    "Title": "Test",
-    "Id": 12
+    "Price": 200.0,
+    "Title": "Massage",
+    "Id": 1
   },
   {
-    "Price": 766.0,
-    "Title": "Test6ty6",
-    "Id": 12
+    "Price": 300.0,
+    "Title": "Acupuncture",
+    "Id": 2
   },
   {
-    "Price": 123.0,
-    "Title": "TestService544",
-    "Id": 13
+    "Price": 275.0,
+    "Title": "Physiotherapy",
+    "Id": 3
   }
 ]

@@ -2,22 +2,48 @@
   {
     "BookingId": 1,
     "Clients": {
-      "Id": 0,
-      "Name": "asdasds"
+      "Id": 1,
+      "Name": "Oliver"
     },
     "Services": [
       {
-        "Price": 112.0,
-        "Title": "Test",
-        "Id": 12
+        "Price": 200.0,
+        "Title": "Massage",
+        "Id": 1
+      },
+      {
+        "Price": 300.0,
+        "Title": "Acupuncture",
+        "Id": 2
       }
     ],
-    "DateTime": "2024-05-25T00:00:00",
+    "DateTime": "2024-05-31T17:00:00",
     "Staff": {
-      "Name": "Ramiiii",
-      "Id": 0,
-      "Specialty": null
+      "Name": "Miki",
+      "Id": 4,
+      "Specialty": "Acupuncturist"
     },
-    "TotalPrice": 112.0
+    "TotalPrice": 500.0
+  },
+  {
+    "BookingId": 2,
+    "Clients": {
+      "Id": 2,
+      "Name": "Camilla"
+    },
+    "Services": [
+      {
+        "Price": 275.0,
+        "Title": "Physiotherapy",
+        "Id": 3
+      }
+    ],
+    "DateTime": "2024-06-30T09:15:00",
+    "Staff": {
+      "Name": "Jens Peter",
+      "Id": 6,
+      "Specialty": "Fysiotherapist"
+    },
+    "TotalPrice": 275.0
   }
 ]
