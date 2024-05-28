@@ -21,6 +21,7 @@ public class BookingPage : PageModel
     {
         ClientName = Name;
         TotalPrice = ShoppingCartService.CalcTotalPrice();
+        ShoppingCartService.ShoppingCart = new List<Models.Services>();
         return Page();
     }
 }

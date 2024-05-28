@@ -25,6 +25,7 @@ public class ShoppingCart : PageModel
     {
         Services = repo.GetService(Id);
         ShoppingCartService.RemoveServiceFromCart(Services);
+        TotalPrice = ShoppingCartService.CalcTotalPrice();
         return Page();
     }
     
